@@ -1,0 +1,12 @@
+name: Continuous integration
+on: [push]
+jobs:
+  job 1:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Code Checkout
+        uses: actions/checkout@v4
+      - run: Hello world
+        name: Run echo Command
+      - run: find .
+        name: list files 
